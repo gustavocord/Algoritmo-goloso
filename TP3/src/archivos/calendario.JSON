@@ -1,0 +1,2850 @@
+{
+  "equipos": [
+    {
+      "nombre": "River"
+    },
+    {
+      "nombre": "Talleres"
+    },
+    {
+      "nombre": "Boca Juniors"
+    },
+    {
+      "nombre": "Lanus"
+    },
+    {
+      "nombre": "Velez"
+    },
+    {
+      "nombre": "Estudiantes"
+    },
+    {
+      "nombre": "Colon"
+    },
+    {
+      "nombre": "Defensa y Justicia"
+    },
+    {
+      "nombre": "Huracan"
+    },
+    {
+      "nombre": "Independiente"
+    },
+    {
+      "nombre": "Argentinos Juniors"
+    },
+    {
+      "nombre": "Gimnasia LP"
+    },
+    {
+      "nombre": "Godoy Cruz"
+    },
+    {
+      "nombre": "Racing"
+    },
+    {
+      "nombre": "Union"
+    },
+    {
+      "nombre": "Rosario Central"
+    },
+    {
+      "nombre": "Platense"
+    },
+    {
+      "nombre": "Sarmiento"
+    },
+    {
+      "nombre": "Atletico Tucuman"
+    },
+    {
+      "nombre": "Newell"
+    },
+    {
+      "nombre": "San Lorenzo"
+    },
+    {
+      "nombre": "Aldosivi"
+    },
+    {
+      "nombre": "Patronato"
+    },
+    {
+      "nombre": "Banfield"
+    },
+    {
+      "nombre": "Arsenal"
+    },
+    {
+      "nombre": "Central Cordoba"
+    }
+  ],
+  "arbitros": [
+    {
+      "numero": 0
+    },
+    {
+      "numero": 1
+    },
+    {
+      "numero": 2
+    },
+    {
+      "numero": 3
+    },
+    {
+      "numero": 4
+    },
+    {
+      "numero": 5
+    },
+    {
+      "numero": 6
+    },
+    {
+      "numero": 7
+    },
+    {
+      "numero": 8
+    },
+    {
+      "numero": 9
+    },
+    {
+      "numero": 10
+    },
+    {
+      "numero": 11
+    },
+    {
+      "numero": 12
+    }
+  ],
+  "fechas": [
+    {
+      "numero": 1,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 12,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 13,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 14,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 15,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 16,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 17,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 18,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 19,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 20,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 21,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 22,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 23,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Arsenal"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 24,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "River"
+          },
+          "equipo2": {
+            "nombre": "Banfield"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Talleres"
+          },
+          "equipo2": {
+            "nombre": "Patronato"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Boca Juniors"
+          },
+          "equipo2": {
+            "nombre": "Aldosivi"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Lanus"
+          },
+          "equipo2": {
+            "nombre": "San Lorenzo"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Velez"
+          },
+          "equipo2": {
+            "nombre": "Newell's"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Estudiantes"
+          },
+          "equipo2": {
+            "nombre": "Atletico Tucuman"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Colon"
+          },
+          "equipo2": {
+            "nombre": "Sarmiento"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Defensa y Justicia"
+          },
+          "equipo2": {
+            "nombre": "Platense"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Huracan"
+          },
+          "equipo2": {
+            "nombre": "Rosario Central"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Independiente"
+          },
+          "equipo2": {
+            "nombre": "Union"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Argentinos Juniors"
+          },
+          "equipo2": {
+            "nombre": "Racing"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Gimnasia LP"
+          },
+          "equipo2": {
+            "nombre": "Godoy Cruz"
+          }
+        }
+      ]
+    },
+    {
+      "numero": 25,
+      "partidos": [
+        {
+          "equipo1": {
+            "nombre": "Godoy Cruz"
+          },
+          "equipo2": {
+            "nombre": "Central Cordoba"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Racing"
+          },
+          "equipo2": {
+            "nombre": "Gimnasia LP"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Union"
+          },
+          "equipo2": {
+            "nombre": "Argentinos Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Rosario Central"
+          },
+          "equipo2": {
+            "nombre": "Independiente"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Platense"
+          },
+          "equipo2": {
+            "nombre": "Huracan"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Sarmiento"
+          },
+          "equipo2": {
+            "nombre": "Defensa y Justicia"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Atletico Tucuman"
+          },
+          "equipo2": {
+            "nombre": "Colon"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Newell's"
+          },
+          "equipo2": {
+            "nombre": "Estudiantes"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "San Lorenzo"
+          },
+          "equipo2": {
+            "nombre": "Velez"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Aldosivi"
+          },
+          "equipo2": {
+            "nombre": "Lanus"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Patronato"
+          },
+          "equipo2": {
+            "nombre": "Boca Juniors"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Banfield"
+          },
+          "equipo2": {
+            "nombre": "Talleres"
+          }
+        },
+        {
+          "equipo1": {
+            "nombre": "Arsenal"
+          },
+          "equipo2": {
+            "nombre": "River"
+          }
+        }
+      ]
+    }
+  ]
+}
