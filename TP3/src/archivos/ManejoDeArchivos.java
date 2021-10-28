@@ -1,6 +1,7 @@
 package archivos;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -13,16 +14,40 @@ public class ManejoDeArchivos {
 	
 	
 	static void muestraContenido(String archivo) throws FileNotFoundException, IOException {
-	      FileInputStream f = new FileInputStream(archivo);
+		try {  
+		FileInputStream f = new FileInputStream(archivo);
 	      Scanner scanner = new Scanner(f);
-	    
-	      while( scanner.hasNextInt() )
-	    	  System.out.println( scanner.nextInt() );
+		
+	      while( scanner.hasNextLine() )
+	    	  System.out.println( scanner.nextLine() );
+		}
+		
+	 catch(Exception e) {
+	       e.printStackTrace();
+	       }
+}
+	
+	
+	static String miDirectorio() {
+		   File miDir = new File (".");
+		   String dir="";
+		     try {
+		        dir= miDir.getCanonicalPath()+"\\src\\archivos\\archivo.txt";
+		       return dir;
+		       }
+		     catch(Exception e) {
+		       e.printStackTrace();
+		       }
+		     return dir;
 	}
 	
 	
-	   public static void main(String[] args) throws IOException {
-	        muestraContenido("archivo.txt");
+	
+	   public static void main(String[] args) throws FileNotFoundException, IOException  {
+		   muestraContenido(miDirectorio());
+		  
+		     }	
+	
 	    }
 
-}
+
