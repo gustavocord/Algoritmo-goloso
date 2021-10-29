@@ -1,16 +1,17 @@
 package logica;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 
 public class Fecha {
 
-	private LinkedList<Partido> partidos= new LinkedList<Partido>();
+	private ArrayList<Partido> partidos= new ArrayList<Partido>();
 	private int numero;
 	
 	Fecha(int numero){
-		
+		this.numero=numero;
 	}
 	
 	public int getNumero() {
@@ -18,7 +19,7 @@ public class Fecha {
   	}
 
 	
-	public List<Partido> getPartidos() {
+	public ArrayList<Partido> getPartidos() {
 		return partidos;
 	}
 
@@ -27,9 +28,9 @@ public class Fecha {
 		return partidos.contains(partido);
 	}
 
-	public List<Partido> partidosSinArbitro(){
+	public ArrayList<Partido> partidosSinArbitro(){
 		
-		List<Partido> partidosSinArbitro = new LinkedList<Partido>();
+		ArrayList<Partido> partidosSinArbitro = new ArrayList<Partido>();
 		for(Partido partido: partidos) {
 			if(partido.getArbitro() == null) {
 				partidosSinArbitro.add(partido);

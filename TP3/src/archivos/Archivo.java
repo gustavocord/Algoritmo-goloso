@@ -15,7 +15,7 @@ import logica.Torneo;
 
 public class Archivo {
 	
-
+// como en el archivo no se agrega se deberia agregar en el main las fechas
 	static String miDirectorio() {
 		File miDir = new File(".");
 		String dir = "";
@@ -28,26 +28,11 @@ public class Archivo {
 		return dir;
 	}
 
-	private String generarJSONPretty() {
-		Gson gson = new GsonBuilder().setPrettyPrinting().create();
-		String json = gson.toJson(this);
 
-		return json;
-	}
+	
 
-	public void generarJSON(String archivo) {
-		String json = this.generarJSONPretty();
-
-		try {
-			FileWriter writer = new FileWriter(archivo);
-			writer.write(json);
-			writer.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public static Torneo leerJSON(String archivo) {
+	public static Torneo leerJSON() {
+		String archivo=miDirectorio();
 		Gson gson = new Gson();
 		Torneo ret = null;
 
@@ -84,6 +69,7 @@ public class Archivo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
+		//para prueba
 		 Archivo.imprimirJSON(miDirectorio());
       
 
