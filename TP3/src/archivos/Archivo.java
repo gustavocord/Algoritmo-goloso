@@ -70,7 +70,7 @@ public class Archivo {
 		// TODO Auto-generated method stub
 		
 		//para prueba
-		 Archivo.imprimirJSON(miDirectorio());
+		///// Archivo.imprimirJSON(miDirectorio());
       
 
 		

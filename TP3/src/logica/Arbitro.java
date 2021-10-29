@@ -2,23 +2,23 @@ package logica;
 
 public class Arbitro {
 
-	private int nro ;
+	private int numero ;
 	
 	Arbitro(int nro){
-		this.nro=nro;
+		this.numero=nro;
 	}
 
 	public int getNro() {
-		return nro;
+		return numero;
 	}
 
 	public void setNro(int nro) {
-		this.nro = nro;
+		this.numero = nro;
 	}
 
 	@Override
 	public String toString() {
-		return "Arbitro [nro=" + nro + "]";
+		return "Arbitro [nro=" + numero + "]";
 	}
 	
 	
