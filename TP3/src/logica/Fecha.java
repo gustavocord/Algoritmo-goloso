@@ -3,6 +3,7 @@ package logica;
 import java.util.LinkedList;
 import java.util.List;
 
+
 public class Fecha {
 
 	private LinkedList<Partido> partidos= new LinkedList<Partido>();
@@ -11,7 +12,6 @@ public class Fecha {
 	Fecha(int numero){
 		
 	}
-	
 	
 	public int getNumero() {
   		return numero;
@@ -37,7 +37,21 @@ public class Fecha {
 		}
 		return partidosSinArbitro;
 	}
+	
+	public int cantPartidos() {
+		return partidos.size();
+	}
 
+	
+	public void agregarPartido(Partido partido) {
+		partidos.add(partido);
+	}
+
+	@Override
+	public String toString() {
+		return "Fecha [partidos=" + partidos + ", numero=" + numero + "]";
+	}
+	
 	
 	
 }

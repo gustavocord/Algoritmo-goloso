@@ -15,7 +15,11 @@ public class Arbitro {
 	public void setNro(int nro) {
 		this.nro = nro;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Arbitro [nro=" + nro + "]";
+	}
 	
 	
 	

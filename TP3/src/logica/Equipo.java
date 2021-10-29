@@ -12,11 +12,13 @@ public class Equipo {
 		return nombre;
 	}
 
+
+	
 	@Override
 	public String toString() {
-		return nombre ;
+		return "Equipo [nombre=" + nombre + "]";
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (obj == null)
