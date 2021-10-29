@@ -44,7 +44,7 @@ public class UIMain {
 		BtnAsignarArbitros.setFont(new Font("Tahoma", Font.PLAIN, 25));
 		BtnAsignarArbitros.setBounds(0,0, 300, 80);
 		BtnAsignarArbitros.setLocation((frameMenuPrincipal.getWidth()/2-BtnAsignarArbitros.getWidth()/2),
-									(frameMenuPrincipal.getHeight()/2 + BtnAsignarArbitros.getHeight()/2) + 100 );
+									  (frameMenuPrincipal.getHeight()/2 + BtnAsignarArbitros.getHeight()/2) + 100 );
 		
 		//BtnAsignarArbitros.addActionListener(new ActionListener() {
 		
