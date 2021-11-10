@@ -1,65 +1,64 @@
 package logica;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Partido {
-	private Arbitro arbitro;
-	private Equipo equipo1;
-	private Equipo equipo2;
+public class Partido implements Serializable{
 
+	
+	private static final long serialVersionUID = 1L;
+	private Equipo _equipoLocal;
+	private Equipo _equipoVisitante;
+	private Arbitro _arbitro;
 
-	public Partido(String eq1, String eq2) {
-		this.equipo1 = new Equipo (eq1);
-		this.equipo2 = new Equipo (eq2);
+	public Partido(Equipo equipoLocal, Equipo equipoVisitante) {
+		validarEquipos(equipoLocal, equipoVisitante);
+		this._equipoLocal= equipoLocal;
+		this._equipoVisitante= equipoVisitante;
+		this._arbitro = null; 
 	}
 	
-	public boolean existeArbitro() {
-		return(arbitro!=null);
+	public Equipo getEquipoLocal() {
+		return _equipoLocal;
 	}
 	
-	
-	public void setArbitro(int numero) {
-		
-		this.arbitro = new Arbitro(numero);
+	public void setEquipoLocal(Equipo equipoLocal) {
+		this._equipoLocal = equipoLocal;
 	}
-
+	
+	public Equipo getEquipoVisitante() {
+		return _equipoVisitante;
+	}
+	
+	public void setEquipoVisitante(Equipo equipoVisitante) {
+		this._equipoVisitante = equipoVisitante;
+	}
+	
 	public Arbitro getArbitro() {
-		return arbitro;
+		return _arbitro;
 	}
-
+	
 	public void setArbitro(Arbitro arbitro) {
-		this.arbitro = arbitro;
-	}
-
-	public Equipo getEquipo1() {
-		return equipo1;
-	}
-
-	public void setEquipo1(Equipo equipo1) {
-		this.equipo1 = equipo1;
-	}
-
-	public Equipo getEquipo2() {
-		return equipo2;
-	}
-
-	public void setEquipo2(Equipo equipo2) {
-		this.equipo2 = equipo2;
+		this._arbitro = arbitro;
 	}
 	
-	
-	@Override
-	public String toString() {
-		return "[|" + arbitro + "|"+ equipo1 + " vs " + equipo2 + "|]";
+	private void validarEquipos(Equipo equipoLocal, Equipo equipoVisitante) {
+		if(equipoLocal==null) {
+			throw new IllegalArgumentException("El equipo local es null");
+		}
+		if(equipoVisitante==null) {
+			throw new IllegalArgumentException("El equipo local es null");
+		}
+		if(equipoLocal.equals(equipoVisitante)) {
+			throw new IllegalArgumentException("Ambos equipos son iguales");
+		}
 	}
-
-
+	
 	@Override
 	public int hashCode() {
-		return Objects.hash(arbitro, equipo1, equipo2);
+		return Objects.hash(_equipoLocal, _equipoVisitante);
 	}
-
-
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -69,11 +68,12 @@ public class Partido {
 		if (getClass() != obj.getClass())
 			return false;
 		Partido other = (Partido) obj;
-		return Objects.equals(arbitro, other.arbitro) && Objects.equals(equipo1, other.equipo1)
-				&& Objects.equals(equipo2, other.equipo2);
+		return Objects.equals(_equipoLocal, other._equipoLocal) && Objects.equals(_equipoVisitante, other._equipoVisitante);
 	}
-
-
 	
-
+	@Override
+	public String toString() {
+		return "[" + _equipoLocal + " vs " + _equipoVisitante +  " || Arbitro= " + _arbitro + "]";
+	}
+	
 }

@@ -1,60 +1,63 @@
 package logica;
 
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 
-
-public class Fecha {
-
-	private ArrayList<Partido> partidos= new ArrayList<Partido>();
-	private int numero;
-	
-	Fecha(int numero){
-		this.numero=numero;
-	}
-	
-	public int getNumero() {
-  		return numero;
-  	}
-
-	
-	public ArrayList<Partido> getPartidos() {
-		return partidos;
-	}
-
-	
-	public boolean existePartido(Partido partido) {
-		return partidos.contains(partido);
-	}
-
-	public ArrayList<Partido> partidosSinArbitro(){
-		
-		ArrayList<Partido> partidosSinArbitro = new ArrayList<Partido>();
-		for(Partido partido: partidos) {
-			if(partido.getArbitro() == null) {
-				partidosSinArbitro.add(partido);
-			}
+public class Fecha implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private ArrayList<Partido> _partidos;
+	public Fecha(ArrayList<Partido> partidos) {
+		if(partidos==null) {
+			throw new IllegalArgumentException("La lista de partidos no puede ser null");
 		}
-		return partidosSinArbitro;
+		this._partidos=new ArrayList<Partido>(partidos.size());
+		for(Partido elem: partidos) {
+			agregarPartidoAFecha(elem);
+		}
 	}
-	
-	public int cantPartidos() {
-		return partidos.size();
+	public void asignarArbitroAPartido(int partido, Arbitro arbitro) {
+		validarIndicePartido(partido);
+		if(arbitro==null) {
+			throw new IllegalArgumentException("El arbitro a asignar no debe ser null");
+		}
+		this._partidos.get(partido).setArbitro(arbitro);
 	}
-
-	
-	public void agregarPartido(Partido partido) {
-		partidos.add(partido);
+	private void agregarPartidoAFecha(Partido partido) {
+		validarPartido(partido, "agregar partido");
+		this._partidos.add(partido);
 	}
-
+	private void validarIndicePartido(int partido) {
+		if(partido<0 || partido>this._partidos.size()-1) {
+			throw new IllegalArgumentException("El partido tiene que pertenecer [0, " + partido + "]");
+		}
+	}
+	private void validarPartido(Partido partido, String consulta) {
+		if(partido==null) {
+			throw new IllegalArgumentException("El partido no puede ser null");
+		}
+		if(consulta.equals("agregar partido") && this._partidos.contains(partido) ) {
+			throw new IllegalArgumentException("El partido ya existe en la lista no se puede: " + consulta);
+		}
+	}
+	public Partido getPartido(int partido) {
+		validarIndicePartido(partido);
+		return this._partidos.get(partido);
+	}
+	public ArrayList<Partido> getPartidos() {
+		return _partidos;
+	}
 	@Override
 	public String toString() {
-		return "Fecha [numero= " + numero + " Partidos "+ partidos+ "]";
+		StringBuilder string= new StringBuilder();
+		for(int i= 0; i<this._partidos.size(); i++) {
+			string.append('\n');
+			string.append("Partido " + i + " ");
+			string.append(this._partidos.get(i));
+		}
+		return string.toString();
 	}
-
-
-
-	
 	
 }

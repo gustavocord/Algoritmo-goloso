@@ -1,0 +1,144 @@
+{
+  "_calendario": [
+    {
+      "_partidos": [
+        {
+          "_equipoLocal": {
+            "_nombre": "Independiente"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Huracan"
+          }
+        },
+        {
+          "_equipoLocal": {
+            "_nombre": "River"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Boca"
+          }
+        },
+        {
+          "_equipoLocal": {
+            "_nombre": "San Lorenzo"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Racing"
+          }
+        }
+      ]
+    },
+    {
+      "_partidos": [
+        {
+          "_equipoLocal": {
+            "_nombre": "Huracan"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Boca"
+          }
+        },
+        {
+          "_equipoLocal": {
+            "_nombre": "San Lorenzo"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Independiente"
+          }
+        },
+        {
+          "_equipoLocal": {
+            "_nombre": "River"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Racing"
+          }
+        }
+      ]
+    },
+    {
+      "_partidos": [
+        {
+          "_equipoLocal": {
+            "_nombre": "San Lorenzo"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Huracan"
+          }
+        },
+        {
+          "_equipoLocal": {
+            "_nombre": "Boca"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Racing"
+          }
+        },
+        {
+          "_equipoLocal": {
+            "_nombre": "River"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Independiente"
+          }
+        }
+      ]
+    },
+    {
+      "_partidos": [
+        {
+          "_equipoLocal": {
+            "_nombre": "Huracan"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Racing"
+          }
+        },
+        {
+          "_equipoLocal": {
+            "_nombre": "River"
+          },
+          "_equipoVisitante": {
+            "_nombre": "San Lorenzo"
+          }
+        },
+        {
+          "_equipoLocal": {
+            "_nombre": "Boca"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Independiente"
+          }
+        }
+      ]
+    },
+    {
+      "_partidos": [
+        {
+          "_equipoLocal": {
+            "_nombre": "River"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Huracan"
+          }
+        },
+        {
+          "_equipoLocal": {
+            "_nombre": "Racing"
+          },
+          "_equipoVisitante": {
+            "_nombre": "Independiente"
+          }
+        },
+        {
+          "_equipoLocal": {
+            "_nombre": "Boca"
+          },
+          "_equipoVisitante": {
+            "_nombre": "San Lorenzo"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,105 +1,103 @@
 package vistas;
 
-import java.awt.Color;
-import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 
 import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLayeredPane;
 
-import logica.MainController;
+import logica.Torneo;
+import logica.Equipo;
+import logica.Fecha;
 
 public class UIMain {
-	
-	private Fondo fondo;
-	private JButton BtnAsignarArbitros;
-	private JFrame frameMenuPrincipal;
-
-	private static JLayeredPane layeredPane;
-	private static JPanelMostrarDatos panelDatos;
-	
-	private JButton BtnCambiarAFixture;
 
 	
-	public UIMain() {
-		initialize();
+	private VentanaPrincipal _ventana;
+	private JButton _btnFechaAnterior;
+	private JButton _btnAsignarArbitraje;
+	private JButton _btnFechaSiguiente;
+	private JButton _btnCargarArbitro;
+	private JButton _btnCargarEnVCA; //boton que se encuentra en la ventana cargar arbitro
+	private JButton _btnCancelarEnVCA; //boton que se encuentra en la ventana cargar arbitro
+	private Torneo _torneo;
+	private boolean _primerClicEnBtnArbitro; //esto realizar la asignacion una unica vez
+	
+	
+	public UIMain (VentanaPrincipal ventana) {
+		this._ventana = ventana;
+		this._torneo=null;
+		inicializarBotones();
+		this._primerClicEnBtnArbitro= false;
+		agregarEventos();
 	}
-
 	
-	public void initialize() {
-		mostrarCalendario();
+	
+	public void mostrarVentanaPrincipal() {
+		this._ventana.mostrar();
 	}
-
-	public void mostrarCalendario() {
-		this.fondo = new Fondo("/imagenes/fondo.jpg");
-		frameMenuPrincipal= new JFrame();
-		frameMenuPrincipal.setContentPane(fondo);
-		frameMenuPrincipal.setExtendedState(JFrame.MAXIMIZED_BOTH);
-		frameMenuPrincipal.getContentPane().setLayout(null);
-		frameMenuPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frameMenuPrincipal.setTitle("Torneo de football" );
-		frameMenuPrincipal.setVisible(true);
-		
-		layeredPane = new JLayeredPane();
-		layeredPane.setBounds(0, 0, 521, 325);
-		layeredPane.setBounds(frameMenuPrincipal.getBounds());
-		frameMenuPrincipal.getContentPane().add(layeredPane);
-		
-		
-		panelDatos = new JPanelMostrarDatos();
-		panelDatos.setVisible(false);
-		layeredPane.add(panelDatos);
-		//inicializo el boton 
-		
-		/*------------Boton para ver calendario--------------------*/
-		BtnAsignarArbitros= new JButton("asignar arbitros");
-		BtnAsignarArbitros.setBackground(new Color(0, 0, 0));
-		BtnAsignarArbitros.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		BtnAsignarArbitros.setBounds(0,0, 300, 80);
-		BtnAsignarArbitros.setLocation((frameMenuPrincipal.getWidth()/2-BtnAsignarArbitros.getWidth()/2),
-									  (frameMenuPrincipal.getHeight()/2 + BtnAsignarArbitros.getHeight()/2) + 100 );
-		
-		//BtnAsignarArbitros.addActionListener(new ActionListener() {
-		
-			//public void actionPerformed(ActionEvent e) {
-			
-	// aca se va a generar la asignacion desde la vista 
-			//	}
-			//});
 	
-		frameMenuPrincipal.getContentPane().add(BtnAsignarArbitros);
+	public void cargarCalendarioAlTorneo(ArrayList<Fecha> calendario, ArrayList<Equipo> equipos) {
+		this._torneo= new Torneo(calendario,equipos);
+		this._ventana.cargarTorneo(calendario);
+		this._ventana.setLimiteDeArbitrosEnVentanaCargarArbitro(equipos.size()/2);//pongo limite en valor para la ventana emergente
+	}
 	
-		
-		BtnCambiarAFixture= new JButton("Cambiar a Fixture");
-		BtnCambiarAFixture.setBackground(new Color(0, 0, 0));
-		BtnCambiarAFixture.setFont(new Font("Tahoma", Font.PLAIN, 25));
-		BtnCambiarAFixture.setBounds(0,0, 300, 80);
-		BtnCambiarAFixture.setLocation((frameMenuPrincipal.getWidth()/2-BtnAsignarArbitros.getWidth()/2),
-									  (frameMenuPrincipal.getHeight()/2 + BtnAsignarArbitros.getHeight()/2) + 10);
-		
-		BtnCambiarAFixture.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
+	private void inicializarBotones() {
+		this._btnFechaAnterior=this._ventana.getBtnFechaAnterior();
+		this._btnAsignarArbitraje=this._ventana.getBtnAsignarArbitraje();
+		this._btnFechaSiguiente=this._ventana.getBtnFechaSiguiente();
+		this._btnCargarArbitro=this._ventana.getBtnCargarArbitro();
+		this._btnCargarEnVCA= this._ventana.getBtnVentanaDeCargaArbitro__CargarArbitro();
+		this._btnCancelarEnVCA=this._ventana.getBtnVentanaDeCargaArbitro__Cancelar();
+	}
+	
+	private void agregarEventos() {
+		_btnFechaAnterior.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				_ventana.paginaAnterior();
+			}
+		});
+		_btnAsignarArbitraje.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				if(!_primerClicEnBtnArbitro) {
+					_torneo.asignarArbitraje();//asigna el arbitraje al torneo
+					_primerClicEnBtnArbitro=true;
+					_btnCargarArbitro.setEnabled(true); //se habilita
+				}
+				else {
+					_torneo.mezclarArbitraje(); //mezcla el arbitraje, ya que solucion hay una sola 
+				}
+					_ventana.cargarTorneo(_torneo.getFechas()); //carga otra vez el torneo
 				
-				cambiarAFixture();
 			}
 		});
 		
-		frameMenuPrincipal.getContentPane().add(BtnCambiarAFixture);
+		_btnFechaSiguiente.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				_ventana.paginaSiguiente();
+			}
+		});
 		
-	}
-	
-	private void cambiarAFixture() {
-		panelDatos.setVisible(true);
-	}
-	
-	public static void main(String[] args) {
-		UIMain ui = new UIMain();
-	}
-	
+		_btnCargarArbitro.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				_ventana.mostrarVentanaDeCargarArbitro(true);
+			}
+		});
+		
+		this._btnCancelarEnVCA.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				_ventana.mostrarVentanaDeCargarArbitro(false);
+			}
+		});
+		
+		this._btnCargarEnVCA.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				_torneo.cambiarNombreAArbitro(_ventana.idDeArbitro(), _ventana.nombreDeArbitro());
+				_ventana.mostrarVentanaDeCargarArbitro(false);
+				_ventana.cargarTorneo(_torneo.getFechas()); //carga otra vez el torneo
 
+			}
+		});
+	}
 }

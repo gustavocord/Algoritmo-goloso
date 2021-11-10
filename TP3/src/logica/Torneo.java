@@ -1,110 +1,201 @@
 package logica;
 
+import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Random;
+import java.util.Set;
 
-public class Torneo {
-
-	private ArrayList<Equipo> equipos;
-	private ArrayList<Fecha> fechas;
-	private ArrayList<Arbitro> arbitros;
-	private HashMap<Fecha, ArrayList<Integer>> arbitrosDisponibles;
-
-	public Torneo() {
-		this.equipos = new ArrayList<>();
-		this.arbitros = new ArrayList<Arbitro>();
-		this.fechas = new ArrayList<Fecha>();
-		this.arbitrosDisponibles = new HashMap<Fecha, ArrayList<Integer>>();
+public class Torneo implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
+	private ArrayList<Fecha> _fechas; //asi las fechas estarian enumeradas 
+	private ArrayList<Equipo> _equipos; 
+	private int _cantEquipos;
+	private Map<Integer, Map<Equipo, Integer > > _arbitraje;
+	private Map<Integer, Set<Partido>> _historialDeArbitro;
+	
+	public Torneo(ArrayList<Fecha> fechas, ArrayList<Equipo> equipos) {
+		this._fechas= new ArrayList<Fecha>(fechas.size());
+		this._equipos= new ArrayList<Equipo>(equipos.size());
+		validarTodasLasFechas(fechas);
+		this._fechas.addAll(fechas);
+		this._cantEquipos= equipos.size();
+		agregarTodosLosEquiposAlTorneo(equipos);
 	}
-
-	@Override
-	public String toString() {
-		return "Torneo [equipos=" + equipos + ", fechas=" + fechas + ", arbitros=" + arbitros + ", arbitrajesPorEquipo="
-				+ ", arbitrosDisponibles=" + arbitrosDisponibles + "]";
+	
+	private void agregarArbitro() {
+		int idDelArbitro= this._arbitraje.size()+1;
+		HashMap<Equipo,Integer> diccDelArbitro= new HashMap<Equipo,Integer>();
+		this._arbitraje.put(idDelArbitro, diccDelArbitro); //lo agrego al map de arbitraje 
+		this._historialDeArbitro.put(idDelArbitro, new HashSet<Partido>());
 	}
-
-	public void generarFixture() {
-
-		if (equipos.size() == 0)
-			throw new IllegalArgumentException("el calendario no se puede generar sin equipos");
-
-		generarFechas();
-
-		generarPartidos();
-
+	
+	public void asignarArbitraje() {//asigna el arbitraje a todo el torneo
+		//cuando se llama a esta funcion se inicializa el arbitraje, esto es para que cada vez que llame se reinicie el arbitraje
+		this._arbitraje= new HashMap<Integer, Map<Equipo, Integer> >(this._cantEquipos/2);
+		this._historialDeArbitro= new HashMap<Integer, Set<Partido>>(this._cantEquipos);
+		for(int i= 0; i< (this._cantEquipos/2); i++ ) {
+			agregarArbitro(); //agrego un arbitro al arbitraje
+		}
+		for(int i= 0; i<this._fechas.size();i++) {
+			asignarArbitrajeEnLaFecha(i);
+		}
 	}
-
-	private void generarPartidos() {
-		int cantPartidos = cantEquipos() / 2;
-		for (Fecha fecha : fechas) {
-			for (int i = 0; i < cantPartidos; i++) {
-				Partido partidoNuevo = new Partido("", "");
-				fecha.agregarPartido(partidoNuevo);
+	
+	public void cambiarNombreAArbitro(int idArbitro, String nombre) {
+		//dado un idDeArbitro, le cambia el nombre
+		validarIDArbitro(idArbitro);
+		for(Partido partido: this._historialDeArbitro.get(idArbitro)) {
+			partido.setArbitro(new Arbitro(nombre));
+		}
+	}
+	
+	public void mezclarArbitraje() {
+		//randomiza el arbitraje
+		int cantDeMezclas= 5;
+		for(int i=0 ; i<cantDeMezclas ; i++) {
+			int idArbitroA=numeroRandomEntre(1, (this._cantEquipos/2)+1); //+1 para que lo incluya
+			int idArbitroB=numeroRandomEntre(1, (this._cantEquipos/2)+1);
+			intercambiarArbitro(idArbitroA, idArbitroB);
+		}
+	}
+	
+	public void intercambiarArbitro(int idArbitroA, int idArbitroB) {
+		validarIDArbitro(idArbitroA);
+		validarIDArbitro(idArbitroB);
+		Map<Equipo,Integer> diccArbitroA = this._arbitraje.get(idArbitroA);
+		Map<Equipo,Integer> diccArbitroB = this._arbitraje.get(idArbitroB);
+		this._arbitraje.replace(idArbitroA, diccArbitroB); //le paso el historial del arbitro B
+		this._arbitraje.replace(idArbitroB, diccArbitroA); //le paso el historial del arbitro A
+		
+		Set<Partido> historialArbitroA= this._historialDeArbitro.get(idArbitroA);
+		Set<Partido> historialArbitroB= this._historialDeArbitro.get(idArbitroB);
+		
+		this._historialDeArbitro.replace(idArbitroA,historialArbitroB); //le paso el historial del arbitro B
+		this._historialDeArbitro.replace(idArbitroB,historialArbitroA); //le paso el historial del arbitro A
+		
+		//ahora le tengo que cambiar el nombre a sus partidos
+		cambiarNombreAArbitro(idArbitroA, "Arbitro "+idArbitroA);
+		cambiarNombreAArbitro(idArbitroB, "Arbitro "+idArbitroB);
+	}
+	
+	private void asignarArbitrajeEnLaFecha(int fecha) {
+		//dado una fecha, asigna el arbitraje de acuerdo al promedio
+		Set<Integer> arbitrosDisponibles = new HashSet<Integer>();
+		arbitrosDisponibles.addAll(this._arbitraje.keySet());
+		for(Partido partido : this._fechas.get(fecha).getPartidos()) {
+			Map<Integer,Double> promediosArbitros= new HashMap<Integer,Double>(); //arbitroID, promedio
+			for(Integer arbitroID : arbitrosDisponibles) {
+				promediosArbitros.put(arbitroID, promedioDePartido (arbitroID,partido));
+			}
+			//ordena por valores
+			List<Entry<Integer, Double>> list = new ArrayList<>(promediosArbitros.entrySet());
+			list.sort(Entry.comparingByValue());
+			StringBuilder arbitroNombre= new StringBuilder ("Arbitro ");
+			arbitroNombre.append(list.get(0).getKey());
+			partido.setArbitro(new Arbitro (arbitroNombre.toString()));
+			registrarPartidoAEquipo(list.get(0).getKey(), partido.getEquipoLocal());
+			registrarPartidoAEquipo(list.get(0).getKey(), partido.getEquipoVisitante());
+			registrarPartidoAArbitro(list.get(0).getKey(), partido);
+			arbitrosDisponibles.remove(list.get(0).getKey());//deja de estar disponible
+			
+		}
+	
+	}
+	
+	private double promedioDePartido(int arbitroID, Partido partido) {
+		Equipo equipoLocal = partido.getEquipoLocal();
+		Equipo equipoVisitante = partido.getEquipoVisitante();
+		registrarEquipoEnArbitro(arbitroID, equipoLocal);
+		registrarEquipoEnArbitro(arbitroID, equipoVisitante);
+		int cantVecesDirigidoEquipoLocal = this._arbitraje.get(arbitroID).get(equipoLocal);
+		int cantVecesDirigidoEquipoVisitante = this._arbitraje.get(arbitroID).get(equipoVisitante);
+		int suma = cantVecesDirigidoEquipoLocal + cantVecesDirigidoEquipoVisitante;
+		return suma!=0? suma/2.0 : 0;
+	}
+	
+	private void registrarEquipoEnArbitro(int arbitroID, Equipo equipo) {
+		if(!this._arbitraje.get(arbitroID).containsKey(equipo)) { //si el equipo no esta registrado en el map del arbitro
+			this._arbitraje.get(arbitroID).put(equipo, 0); //tengo que agregar al equipo al map
+		}
+	}
+	
+	private void registrarPartidoAArbitro(int idArbitro, Partido partido) {
+		validarIDArbitro(idArbitro);
+		this._historialDeArbitro.get(idArbitro).add(partido);
+	}
+	
+	private void registrarPartidoAEquipo(int arbitroID, Equipo equipo) {
+		Map<Equipo,Integer> historialArbitro = this._arbitraje.get(arbitroID);
+		int cantDePartidosActuales= historialArbitro.get(equipo);
+		historialArbitro.replace(equipo, cantDePartidosActuales+1);
+	}
+	
+	private void agregarTodosLosEquiposAlTorneo(ArrayList<Equipo> equipos) {
+		for(Equipo elem: equipos) {
+			agregarEquipoAlTorneo(elem);
+		}
+	}
+	
+	private void validarTodasLasFechas(ArrayList<Fecha> fechas) {
+		for(int i=0; i<fechas.size();i++) {
+			if(fechas.get(i) == null) {
+				throw new IllegalArgumentException("La fecha[" + i + "] es invalida, no puede ser null");
 			}
 		}
 	}
-
-	private void generarFechas() {
-		for (int i = 1; i < cantEquipos(); i++) {
-			Fecha fechaNueva = new Fecha(i);
-			fechas.add(fechaNueva);
-			arbitrosDisponibles.put(fechaNueva, new ArrayList<Integer>());
+	
+	private void agregarEquipoAlTorneo(Equipo equipo) {
+		if(equipo==null) {
+			throw new IllegalArgumentException("El equipo que ingresa al torneo no puede ser null");
+		}
+		if(this._equipos.contains(equipo)) {
+			throw new IllegalArgumentException("El equipo " + equipo.getNombre() + " ya participa en el torneo");
+		}
+		this._equipos.add(equipo);
+	}
+	
+	public void setFechas(ArrayList<Fecha> fechas) {
+		this._fechas = fechas;
+	}
+	
+	public void setEquipos(ArrayList<Equipo> equipos) {
+		this._equipos = equipos;
+	}
+	
+	public ArrayList<Fecha> getFechas() {
+		return _fechas;
+	}
+	
+	public ArrayList<Equipo> getEquipos() {
+		return _equipos;
+	}
+	
+	public void validarIDArbitro(int idArbitro) {
+		if(idArbitro<=0 || idArbitro>this._arbitraje.size()) {
+			throw new IllegalArgumentException("idArbitro no es valido, el id va de [,"+this._arbitraje.size()+"]");
 		}
 	}
-
-	private int obtenerIndiceEquipo(Equipo equipo) {
-		return equipos.indexOf(equipo);
+	
+	public int getCantEquipos() {
+		return _cantEquipos;
 	}
-
-	public void agregarEquipo(String nombre) {
-		equipos.add(new Equipo(nombre));
+	
+	public Map<Integer, Map<Equipo, Integer>> getArbitraje() {
+		return _arbitraje;
 	}
-
-	public int cantEquipos() {
-		return equipos.size();
+	
+	public Map<Integer, Set<Partido>> getHistorialDeArbitro() {
+		return _historialDeArbitro;
 	}
-
-	public int cantArbitros() {
-		return equipos.size() / 2;
+	
+	private int numeroRandomEntre(int min, int max) {
+		Random aleatorio= new Random();
+		return min + aleatorio.nextInt(max-min);
 	}
-
-	// ----------------------------------GETTERS Y
-	// SETTERS---------------------------------//
-	@SuppressWarnings("unchecked")
-	public ArrayList<Fecha> getFechas() {
-		return (ArrayList<Fecha>) fechas.clone();
-	}
-
-	@SuppressWarnings("unchecked")
-	public ArrayList<Equipo> getEquipos() {
-		return (ArrayList<Equipo>) equipos.clone();
-	}
-
-	@SuppressWarnings("unchecked")
-	public ArrayList<Arbitro> getArbitros() {
-		return (ArrayList<Arbitro>) arbitros.clone();
-	}
-
-	@SuppressWarnings("unchecked")
-	public HashMap<Fecha, ArrayList<Integer>> getArbitrosDisponibles() {
-		return (HashMap<Fecha, ArrayList<Integer>>) arbitrosDisponibles.clone();
-	}
-
-	public void setArbitrosDisponibles(HashMap<Fecha, ArrayList<Integer>> arbitrosDisponibles) {
-		this.arbitrosDisponibles = arbitrosDisponibles;
-	}
-
-	public void setEquipos(ArrayList<Equipo> equipos) {
-		this.equipos = equipos;
-	}
-
-	public void setFechas(ArrayList<Fecha> fechas) {
-		this.fechas = fechas;
-	}
-
-	public void setArbitros(ArrayList<Arbitro> arbitros) {
-		this.arbitros = arbitros;
-	}
-
 }
